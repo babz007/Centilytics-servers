@@ -39,6 +39,6 @@ def fill(CentServer, i, j, symbol):
 
 limit = sys.getrecursionlimit()
 
-print('full update o servers:')
+print('full update of servers:')
 print(fill(table, 1, 1, '1'))
 print("Recursion Limit:", limit," || number of days: ", counter[0])
