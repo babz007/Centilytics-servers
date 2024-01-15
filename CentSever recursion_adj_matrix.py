@@ -23,7 +23,7 @@ def fill(CentServer, i, j, symbol):
             if i < 0 or i >= CentServer.shape[0] or j < 0 or j >= CentServer.shape[1]:
                 # out of bounds
                 return
-            #change the symbol if it is adjacent
+            #change the symbol if r or c is adjacent 
             if CentServer[i,j] == originalSymbol:
                 CentServer[i,j] = symbol
                 for di, dj in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
